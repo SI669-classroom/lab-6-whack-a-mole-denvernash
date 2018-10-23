@@ -6,9 +6,14 @@ import { DataProvider } from '../provider/data/data';
 import { StatusBar } from '@ionic-native/status-bar';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { IonicStorageModule } from '@ionic/storage';
+import { Routes, RouterModule } from '@angular/router';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+
+const routes: Routes = [
+  { path: 'leaderboardpage', loadChildren: './leaderboard/leaderboard.module#LeaderboardPageModule' },
+];
 
 @NgModule({
   declarations: [
