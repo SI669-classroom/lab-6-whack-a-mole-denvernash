@@ -111,10 +111,9 @@ export class HomePage {
 
   stateToClass(state: number) {
     switch(state) {
-      /**
-       * What should this function do?
-       * Hint: Look in the home.scss file
-       */
+      case 0: return('hid');
+      case 1: return('out')
+      case 2: return('hit')
     }
 }
 
